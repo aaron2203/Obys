@@ -29,6 +29,7 @@ body {
 #main {
   position: relative;
   background-color: #151515;
+  width: 100%;
 }
 body {
   overflow-x: hidden;
@@ -619,22 +620,27 @@ body {
 
 /*Responsive*/
 @media (max-width: 600px) {
-    #loader {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        position: fixed;
-        z-index: 999999;
-        background-color: #030303;
-        padding: 25vh 5vw;
-    }
+  #loader {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    z-index: 999999;
+    background-color: #030303;
+    padding: 25vh 5vw;
+  }
+  body {
+    overflow-x: hidden;
+    width:100%;
+    background-color:#151515;
+  }
   #page1 {
     height: 60vh;
     width: 100%;
-    padding-top:50vw;
+    padding-top: 50vw;
   }
   #nav {
     width: 100%;
@@ -644,7 +650,7 @@ body {
     margin-bottom: 17vh;
     z-index: 9999;
     /* background-color:red; */
-    top:0;
+    top: 0;
   }
   #nav svg {
     margin-left: 3vw;
@@ -752,7 +758,7 @@ body {
     padding-top: 17vh;
   }
   #page4-content {
-    width: 100vw;
+    width: 90%;
     position: relative;
     margin-left: 4%;
   }
@@ -769,22 +775,22 @@ body {
   }
   #page4-content > p {
     font-family: plain-regular;
-    width: 90%;
-    font-size: 4.8vw;
+    width: 100%;
+    font-size: 4.3vw;
     color: #ffffff;
     margin-bottom: 7vh;
     margin-top: 10vh;
   }
   #page4-flex {
-    width: 100%;
+    width: 90%;
     height: 80%;
     display: flex;
     gap: 2vw;
-    flex-direction:column-reverse;
+    flex-direction: column-reverse;
   }
   #page4-flex img {
     height: 70%;
-    width: 90%;
+    width: 100%;
   }
   #page4-flex p {
     width: 90%;
@@ -798,7 +804,7 @@ body {
     width: 90%;
     height: 140vw;
     margin-top: 0vh;
-    margin-left:0vw;
+    margin-left: 0vw;
     margin-bottom: 25vw;
   }
   .blue-elem {
@@ -810,23 +816,23 @@ body {
   .blue-elem p {
     font-size: 3.5vw;
   }
-#page5 {
-  min-height: 50vh;
-}
-.marquee {
-  /* background-color: red; */
-  overflow-x: hidden;
-  white-space: nowrap;
-  margin-bottom: -2vw;
-}
-.marquee h1 {
-  font-size: 9.5vw;
-}
-.marquee-rev h1 {
-  font-size: 9.5vw;
-}
+  #page5 {
+    min-height: 50vh;
+  }
+  .marquee {
+    /* background-color: red; */
+    overflow-x: hidden;
+    white-space: nowrap;
+    margin-bottom: -2vw;
+  }
+  .marquee h1 {
+    font-size: 9.5vw;
+  }
+  .marquee-rev h1 {
+    font-size: 9.5vw;
+  }
 
-#footer {
+  #footer {
     height: 100vh;
     width: 100%;
     position: relative;
@@ -834,7 +840,7 @@ body {
     background-color: #151515;
   }
   #footer-content {
-    width: 100vw;
+    width: 90%;
     position: relative;
     margin-left: 4%;
   }
